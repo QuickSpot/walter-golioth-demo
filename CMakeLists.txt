@@ -1,16 +1,13 @@
-# Copyright (c) 2022-2023 Golioth, Inc.
+# Copyright (c) 2024 DPTechnics bv
 # SPDX-License-Identifier: Apache-2.0
 
 cmake_minimum_required(VERSION 3.20.0)
 
+list(APPEND BOARD_ROOT ${CMAKE_CURRENT_SOURCE_DIR})
+
 find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 
-project(rd_template)
+project(walter_golioth_demo)
 
 target_sources(app PRIVATE src/main.c)
-target_sources(app PRIVATE src/app_rpc.c)
-target_sources(app PRIVATE src/app_settings.c)
-target_sources(app PRIVATE src/app_state.c)
-target_sources(app PRIVATE src/app_sensors.c)
-
-add_subdirectory_ifdef(CONFIG_ALUDEL_BATTERY_MONITOR src/battery_monitor)
+target_sources(app PRIVATE src/sensor_dht20.c)

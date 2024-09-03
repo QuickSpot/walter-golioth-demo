@@ -1,11 +1,11 @@
-# Copyright (c) 2022-2023 Golioth, Inc.
+# Copyright (c) 2024 DPTechnics bv
 # SPDX-License-Identifier: Apache-2.0
 
 sample:
-  description: Golioth Reference Design Template
-  name: rd_template
+  description: Walter Golioth Demo
+  name: walter_golioth_demo
 common:
   harness: net
-  platform_allow: >
-    nrf9160dk_nrf9160_ns
+  platform_allow:
+    - walter/esp32s3/procpu
   tags: golioth
