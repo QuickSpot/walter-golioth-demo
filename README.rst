@@ -41,7 +41,7 @@ Use ``west`` to initialize and install
 .. code-block:: shell
 
    cd ~/walter-golioth-demo
-   west init -m git@git.dptechnics.com:quickspot/walter/walter-software/zephyr/walter-golioth-demo.git .
+   west init -m https://github.com/QuickSpot/walter-golioth-demo.git .
    west update
    west zephyr-export
    pip install -r deps/zephyr/scripts/requirements.txt
