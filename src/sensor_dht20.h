@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2024 Golioth, Inc.
+ * Copyright (c) 2024 DPTechnics bv
  *
  * SPDX-License-Identifier: Apache-2.0
  */
